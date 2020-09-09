@@ -1,0 +1,36 @@
+{% include 'header.html' %}
+    <div class="blog_breadcrumb_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="blog_breadcrumb_div">
+						<h3>{{ blog.title }}</h3>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="blog_main_wrapper blog_toppadder60 blog_bottompadder60">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="blog_post_style2 blog_single_div">
+						<div class="blog_post_style2_img wow fadeInUp">
+							<img src="{{ blog.image.url}}" class="img-fluid" alt="">
+						</div>
+						<div class="blog_post_style2_content wow fadeInUp">
+							<h3>{{ blog.title }}</h3>
+							<div class="blog_author_data"><a href="#"><img src="https://via.placeholder.com/34x34" class="img-fluid" alt="" width="34" height="34"> {{ blog.user}}</a></div>
+                            {{ blog.content|safe }}
+
+
+                        </div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% include 'footer.html' %}
