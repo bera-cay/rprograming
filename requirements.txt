@@ -4,6 +4,10 @@ Django==2.2.16
 django-oauth-toolkit==1.3.2
 idna==2.10
 oauthlib==3.1.0
+asgiref==3.2.10
+django-ckeditor==5.9.0
+django-js-asset==1.2.2
+Pillow==7.2.0
 pytz==2020.1
 requests==2.24.0
 sqlparse==0.3.1
